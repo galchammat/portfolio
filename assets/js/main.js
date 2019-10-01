@@ -112,7 +112,9 @@ function setupModal(){
 	}
 
 	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = closeModal;
+	var body = document.getElementsByTagName("BODY")[0];
+	body.onclick = closeModal;
+	body.ontouchend = closeModal;
 		
 	$(document).keyup(function(e) {
 		if (e.key === "Escape") { // escape key maps to keycode `27`
