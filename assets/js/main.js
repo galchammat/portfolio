@@ -44,7 +44,7 @@ function setupModal(){
 		"visual-sorting": {
 			"title": "Visual Sorting",
 			"description": "Synchronized and animated multiple sorting algorithms inline using generator functions and animation frames in plain Javascript.",
-			"app-url": "https://alchammatg.github.io/",
+			"app-url": "https://alchammatg.github.io/visual-sorting-algorithms",
 			"repo-url": "https://github.com/alchammatg/visual-sorting-algorithms"
 		},
 		"lms-migration": {
