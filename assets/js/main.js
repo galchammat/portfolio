@@ -57,6 +57,11 @@ function setupModal(){
 			"description": "Using Pandas, detected the recession period in a GDP dataframe, then compared housing prices between university towns and other towns during the recession period.",
 			"repo-url": "https://github.com/alchammatg/data-science/blob/master/recession-housing-ttest.ipynb"
 		},
+		"temperature-plot": {
+			"title": "Temperature Extrema Plot",
+			"description": "Using Pandas, detected the temperature extrema by day of the year between 2005 and 20014, and also detected record-breaking highs and lows in 2015. Range data is plotted as lines overlayed by a scatteplot of 2015 data.",
+			"repo-url": "https://github.com/alchammatg/data-science/blob/master/plotting-project/temperature-extrema.ipynb"
+		},
 		"gateway-upgrade": {
 			"title": "IoT Data Exporter Upgrade",
 			"description": "Upgraded a Data Exporter which is part of a client’s iEMS by developing and integrating a GUI, automating configuration through the client server’s API, and developing an installable build of the project. Source-code is non-disclosable.",
@@ -81,11 +86,32 @@ function setupModal(){
 	var modalRepoLink = document.getElementById("modal-repo-link");
 
 
-	var imgages = document.getElementsByClassName("gallery-image");
-	for (x = 0; x < imgages.length; x++)
-		imgages[x].onclick = function(){
-			imgData = modal_data[this.alt.toString()];
-			
+	var images = document.getElementsByClassName("gallery-image");
+
+	function addGalleryLogos(container, weburl, giturl) {
+		container = container.childNodes[1];
+		if (weburl != undefined) {
+			//modify gallery look
+			var aTag = document.createElement('a');
+			aTag.setAttribute('class',"fas fa-rocket");
+			container.appendChild(aTag)
+		}
+		if (giturl != undefined) {
+			//modify gallery look
+			var aTag = document.createElement('a');
+			aTag.setAttribute('class',"icon brands fa-github");
+
+			container.appendChild(aTag)
+		}
+	}
+
+	for (x = 0; x < images.length; x++) {
+		const container = images[x].parentElement.parentElement;
+		const imgData = modal_data[images[x].alt.toString()];
+		addGalleryLogos(container, imgData['app-url'], imgData['repo-url']);
+		
+		images[x].onclick = function(){
+			const imgData = modal_data[this.alt.toString()];
 			modalImg.src = this.src;
 			modalTitle.innerHTML = imgData['title']
 			modalDescription.innerHTML = imgData['description']
@@ -101,6 +127,8 @@ function setupModal(){
 			}
 			
 			modal.style.display = "block";
+
+		}
 	}
 
 	// Get the <span> element that closes the modal
@@ -127,5 +155,5 @@ function setupModal(){
 		modal.style.display = "none";
 		}
 	}
-}
+} //Setup_Modal()
 

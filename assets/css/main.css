@@ -1964,6 +1964,10 @@ input, select, textarea {
 			width: auto;
 		}
 
+		.box:hover .image.featured {
+			opacity: 0.3;
+		}
+
 /* Icons */
 
 	.icon {
@@ -2503,6 +2507,7 @@ input, select, textarea {
 				}
 
 				.box .image.featured {
+					display: block;
 					position: relative;
 					left: 20px;
 					top: 20px;
@@ -2520,6 +2525,12 @@ input, select, textarea {
 					max-width: 32em;
 					margin-left: auto !important;
 					margin-right: auto !important;
+				}
+
+				.box.style2.content-icons {
+					display: inline-block;
+					align-self: left;
+					position: relative;
 				}
 
 		/* Wrappers */
