@@ -233,6 +233,30 @@ input, select, textarea {
 			width: 900px;
 		}
 
+	.glogo1 {
+		color: white;
+		background-color: black;
+		position: absolute;
+		display: inline-block;
+		border-top: 5px;
+		left: 0px;
+		width: 30px;
+		height: 30px;
+		align-self: auto;
+	}
+
+	.glogo2 {
+		color: white;
+		background-color: black;
+		position: absolute;
+		display: inline-block;
+		border-top: 5px;
+		left: 30px;
+		width: 30px;
+		height: 30px;
+		align-self: auto;
+	}
+
 		@media screen and (max-width: 1680px) {
 
 			.container {
@@ -281,6 +305,8 @@ input, select, textarea {
 				}
 
 		}
+
+	
 
 /* Row */
 
@@ -2224,11 +2250,12 @@ input, select, textarea {
 	text-align: center;
 	color: black;
 	padding: 10px;
-	height: 60px;
+	height: 65px;
 	background-color: white;
-	border-bottom-width:10px;
-    border-bottom-color:black;
+	border-bottom: 2px solid black;
   }
+
+
   
   #modal-footer {
 	margin: auto;

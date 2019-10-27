@@ -90,16 +90,23 @@ function setupModal(){
 
 	function addGalleryLogos(container, weburl, giturl) {
 		container = container.childNodes[1];
+		let lclass = 'glogo1'
 		if (weburl != undefined) {
 			//modify gallery look
 			var aTag = document.createElement('a');
-			aTag.setAttribute('class',"fas fa-rocket");
+			aTag.setAttribute('class', lclass + " fas fa-play");
+			aTag.setAttribute('target', "_blank");
+			aTag.setAttribute('href', weburl);
+
+			lclass = 'glogo2'
 			container.appendChild(aTag)
 		}
 		if (giturl != undefined) {
 			//modify gallery look
 			var aTag = document.createElement('a');
-			aTag.setAttribute('class',"icon brands fa-github");
+			aTag.setAttribute('class',lclass + "  icon brands fa-github");
+			aTag.setAttribute('target', "_blank");
+			aTag.setAttribute('href', giturl);
 
 			container.appendChild(aTag)
 		}
