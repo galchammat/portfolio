@@ -234,8 +234,8 @@ input, select, textarea {
 		}
 
 	.glogo1 {
-		color: white;
-		background-color: black;
+		color: #fff;
+		background-color: #282828;
 		position: absolute;
 		display: inline-block;
 		border-top: 5px;
@@ -246,8 +246,8 @@ input, select, textarea {
 	}
 
 	.glogo2 {
-		color: white;
-		background-color: black;
+		color: #fff;
+		background-color: #282828;
 		position: absolute;
 		display: inline-block;
 		border-top: 5px;
