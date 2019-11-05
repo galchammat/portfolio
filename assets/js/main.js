@@ -55,12 +55,17 @@ function setupModal(){
 		"hypothesis-test": {
 			"title": "Hypothesis Test",
 			"description": "Using Pandas, detected the recession period in a GDP dataframe, then compared housing prices between university towns and other towns during the recession period.",
-			"repo-url": "https://github.com/alchammatg/data-science/blob/master/recession-housing-ttest.ipynb"
+			"repo-url": "https://github.com/alchammatg/data-science/blob/master/introduction/ttest-project/recession-housing-ttest.ipynb"
 		},
 		"temperature-plot": {
 			"title": "Temperature Extrema Plot",
 			"description": "Using Pandas, detected the temperature extrema by day of the year between 2005 and 20014, and also detected record-breaking highs and lows in 2015. Range data is plotted as lines overlayed by a scatteplot of 2015 data.",
-			"repo-url": "https://github.com/alchammatg/data-science/blob/master/plotting-project/temperature-extrema.ipynb"
+			"repo-url": "https://github.com/alchammatg/data-science/blob/master/data-visualization/plotting-project/temperature-extrema.ipynb"
+		},
+		"wildfire-plot": {
+			"title": "Correlating Wildfire Weather",
+			"description": "Found and utilized data sources to answer the question: In British Columbia, is (wildfire size) more closely correlated to (precipitation volume) or (temperature)? Used a Scatter matrix to cross-examine correlations between the questioned variables.",
+			"repo-url": "https://github.com/alchammatg/data-science/blob/master/data-visualization/final-project/fire_trends.ipynb"
 		},
 		"gateway-upgrade": {
 			"title": "IoT Data Exporter Upgrade",
