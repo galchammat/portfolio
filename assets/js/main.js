@@ -63,7 +63,7 @@ function setupModal(){
 			"repo-url": "https://github.com/alchammatg/data-science/blob/master/data-visualization/plotting-project/temperature-extrema.ipynb"
 		},
 		"wildfire-plot": {
-			"title": "Correlating Wildfire Weather",
+			"title": "Correlating Wildfires",
 			"description": "Found and utilized data sources to answer the question: In British Columbia, is (wildfire size) more closely correlated to (precipitation volume) or (temperature)? Used a Scatter matrix to cross-examine correlations between the questioned variables.",
 			"repo-url": "https://github.com/alchammatg/data-science/blob/master/data-visualization/final-project/fire_trends.ipynb"
 		},
